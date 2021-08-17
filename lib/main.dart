@@ -27,20 +27,20 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _a = 2;
-  void _generatePrime() {
-    int cont = 0;
+  void _generatePrimO() {
+    int contador = 0;
     int num = 100;
     for (var i = 1; i <= num; i++) {
       if (num % i == 0) {
-        cont++;
+        contador++;
       }
     }
-    if (cont == 2) {
+    if (contador == 2) {
       setState(() {
         _a = num;
       });
     } else {
-      _generatePrime();
+      _generatePrimO();
     }
   }
   
